@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Ajax.Utilities;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Web;
@@ -29,7 +30,7 @@ namespace LicensedBundler
             foreach (var file in files)
             {
                 FileInfo f = new FileInfo(HttpContext.Current.Server.MapPath(file.VirtualFile.VirtualPath));
-                Microsoft.Ajax.Utilities.CodeSettings settings = new Microsoft.Ajax.Utilities.CodeSettings();
+                CodeSettings settings = new CodeSettings();
                 settings.RemoveUnneededCode = true;
                 settings.StripDebugStatements = true;
                 settings.PreserveImportantComments = true;
