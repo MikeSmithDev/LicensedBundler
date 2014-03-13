@@ -3,6 +3,8 @@ LicensedBundler
 
 A custom implementation of bundling and minification in ASP.NET that preserves important comments, as in `*/! Comments /*`, for licensing (or any other) purposes).
 
+This also protects against changes in user-agent which can cause your production bundles to be returned with *all* comments and unminified, as covered in [Changing User-Agent to Eureka/1 Changes Output in ASP.NET Bundling and Minification](http://mikesmithdev.com/blog/aspnet-bundling-changes-output-with-user-agent-eureka-1/).
+
 **Implementation**
 
 
