@@ -6,22 +6,22 @@ using System.Web.Optimization;
 
 namespace LicensedBundler
 {
-    public class LicensedScriptBuilder: Bundle
+    public class LicensedScriptBundle: Bundle
     {
-        public LicensedScriptBuilder(string virtualPath)
+        public LicensedScriptBundle(string virtualPath)
             : base(virtualPath)
         {
-            this.Builder = new LicensedScriptBundleBuilder();
+            this.Builder = new LicensedScriptBuilder();
         }
 
-        public LicensedScriptBuilder(string virtualPath, string cdnPath)
+        public LicensedScriptBundle(string virtualPath, string cdnPath)
             : base(virtualPath, cdnPath)
         {
-            this.Builder = new LicensedScriptBundleBuilder();
+            this.Builder = new LicensedScriptBuilder();
         }
     }
 
-    public class LicensedScriptBundleBuilder : IBundleBuilder
+    public class LicensedScriptBuilder : IBundleBuilder
     {
         public virtual string BuildBundleContent(Bundle bundle, BundleContext context, IEnumerable<BundleFile> files)
         {
