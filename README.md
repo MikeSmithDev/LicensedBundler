@@ -23,3 +23,39 @@ public static void RegisterBundles(BundleCollection bundles)
                   "~/Content/site3.css"));
 }
 </pre>
+
+So your css:
+<pre>
+/*! 
+    This will be visible in bundled and minified version.
+    It's important!
+*/
+
+/* other comments you don't want people to see. */
+
+html {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    border-top: solid 10px #000;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+</pre>
+
+becomes this:
+
+<pre>
+/*! 
+    This will be visible in bundled and minified version.
+    It's important!
+*/
+html{background-color:#000;margin:0;padding:0}body{background-color:#fff;border-top:solid 10px #000;color:#333;font-size:.85em;font-family:"Segoe UI",Verdana,Helvetica,Sans-Serif;margin:0;padding:0}
+</pre>
