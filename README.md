@@ -1,7 +1,7 @@
 LicensedBundler
 ===============
 
-An implementation of the Microsoft ASP.NET Web Optimization Framework bundling and minification that preserves `*/! Important Comments /*` for licensing (or any other) purposes)..
+An add-on to the Microsoft ASP.NET Web Optimization Framework bundling and minification that preserves `*/! Important Comments /*` for licensing (or any other) purposes.
 
 This also protects against changes in user-agent which can cause your production bundles to be returned with *all* comments and unminified, as covered in [Changing User-Agent to Eureka/1 Changes Output in ASP.NET Bundling and Minification](http://mikesmithdev.com/blog/aspnet-bundling-changes-output-with-user-agent-eureka-1/).
 
