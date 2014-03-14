@@ -24,8 +24,7 @@ namespace LicensedBundler
             {
                 content.Append(err.ToString()).Append("\r\n");
             }
-            content.Append(" */\r\n");
-            content.Append("Minify Error").Append("\r\n");
+            content.Append("Minify Error */\r\n");
             content.Append(file);
             return content.ToString();
         }
