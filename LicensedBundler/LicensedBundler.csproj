@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
-    <Compile Include="LicensedScriptBuilder.cs" />
+    <Compile Include="LicensedScriptBundle.cs" />
     <Compile Include="LicensedStyleBundle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

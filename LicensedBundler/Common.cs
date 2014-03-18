@@ -16,6 +16,11 @@ namespace LicensedBundler
             }
         }
 
+        public static string AddHeader()
+        {
+            return "\r\n/*! Bundled by LicensedBundler | www.nuget.org/packages/LicensedBundler/ | @MikeSmithDev mikesmithdev.com */\r\n";
+        }
+
         public static string PrependErrors(string file, ICollection<ContextError> errors)
         {
             var content = new StringBuilder();

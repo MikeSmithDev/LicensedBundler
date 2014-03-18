@@ -27,7 +27,7 @@ namespace LicensedBundler
         public virtual string BuildBundleContent(Bundle bundle, BundleContext context, IEnumerable<BundleFile> files)
         {
             var content = new StringBuilder();
-
+            content.Append(Common.AddHeader());
             foreach (var file in files)
             {
                 FileInfo f = new FileInfo(HttpContext.Current.Server.MapPath(file.VirtualFile.VirtualPath));
